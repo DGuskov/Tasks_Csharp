@@ -10,4 +10,12 @@ Console.WriteLine("Hello, World!");
 
 Console.Clear();
 Console.WriteLine("Введите первое число: ");
-int a Console.ReadLine()
+int a = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите второе число: ");
+int b = int.Parse(Console.ReadLine());
+int result = b*b;
+if (a == result)
+{
+Console.WriteLine("Первое число ЯВЛЯЕТСЯ квадратом второго!");
+}
+else Console.WriteLine("Не является");
