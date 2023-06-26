@@ -13,9 +13,12 @@ Console.WriteLine("Введите первое число: ");
 int a = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите второе число: ");
 int b = int.Parse(Console.ReadLine());
-int result = b*b;
-if (a == result)
+int result = b*b; // вариант без переменной result:
+if (a == result)  // if(Math.Pow(b,2)) - оператор Math.Pow возводит переменную в степень
 {
 Console.WriteLine("Первое число ЯВЛЯЕТСЯ квадратом второго!");
 }
-else Console.WriteLine("Не является");
+else 
+{
+    Console.WriteLine("Не является");
+}
